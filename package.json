@@ -1,5 +1,5 @@
 {
-  "homepage": "http://dorianneto.github.io/webhook-tester",
+  "homepage": "http://webhooktester.dorianneto.com.br",
   "name": "webhook-tester",
   "version": "1.0.0",
   "private": true,
@@ -22,7 +22,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "yarn run build",
+    "predeploy": "yarn run build && cp CNAME ./build",
     "deploy": "npx gh-pages -d build"
   },
   "eslintConfig": {

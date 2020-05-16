@@ -58,6 +58,7 @@ export default function Home() {
       });
     } catch (error) {
       setErrorMessage(error.toString());
+      setShowLoadPage(false);
       handleOpenAlert();
     }
   }
