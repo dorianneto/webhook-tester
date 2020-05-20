@@ -2,7 +2,6 @@ import io from 'socket.io-client';
 
 const socket = io(process.env.REACT_APP_WEBSOCKET_SERVER_URL, {
   autoConnect: false,
-  transports: ['websocket', 'polling']
 });
 
 const connect = (token) => {
