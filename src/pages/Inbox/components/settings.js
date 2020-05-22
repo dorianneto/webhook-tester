@@ -25,6 +25,10 @@ const useStyles = makeStyles((theme) => ({
   },
   grid: {
     alignItems: 'center',
+  },
+  help: {
+    fontStyle: 'italic',
+    fontSize: '0.7rem'
   }
 }));
 
@@ -82,7 +86,7 @@ export default function Settings({ token }) {
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
             <Typography>Payload URL:</Typography>
-            <Grid container spacing={1}>
+            <Grid container spacing={1} className={classes.grid}>
               <Grid item xs={10}>
                 <TextField
                   id="copy-webhook-target"
@@ -93,10 +97,11 @@ export default function Settings({ token }) {
               </Grid>
               <Grid item xs={2}>
                 <IconButton>
-                  <FileCopyIcon color="primary" onClick={copyToClipboard} />
+                  <FileCopyIcon color="default" onClick={copyToClipboard} />
                 </IconButton>
               </Grid>
             </Grid>
+            <Typography className={classes.help}>This webhook expires in 24h right after you generated it.</Typography>
           </DialogContentText>
         </DialogContent>
         <DialogActions>
