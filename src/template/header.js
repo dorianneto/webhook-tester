@@ -3,8 +3,10 @@ import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import IconButton from '@material-ui/core/IconButton';
 import HomeIcon from '@material-ui/icons/Home';
+import OpenInNewIcon from '@material-ui/icons/OpenInNew';
 import Toolbar from '@material-ui/core/Toolbar';
 import Link from '@material-ui/core/Link';
+import Hidden from '@material-ui/core/Hidden';
 import { Link as RouterLink } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
@@ -16,6 +18,8 @@ const useStyles = makeStyles((theme) => ({
   },
   link: {
     margin: theme.spacing(1, 1.5),
+    display: 'inline-flex',
+    verticalAlign: 'middle'
   },
 }));
 
@@ -32,11 +36,11 @@ export default function Header() {
           <Link component={RouterLink} to="/about" variant="button" color="textPrimary" className={classes.link}>
             About
           </Link>
-          <Link href="#" variant="button" color="textPrimary" className={classes.link}>
-            Status
-          </Link>
           <Link component={RouterLink} to="/contact" variant="button" color="textPrimary" className={classes.link}>
             Contact
+          </Link>
+          <Link href="https://stats.uptimerobot.com/Q18BMT6Nom" target="_blank" variant="button" color="textPrimary" className={classes.link}>
+            <Hidden xsDown><OpenInNewIcon fontSize="small" style={{ marginRight: 3 }} /></Hidden> Status
           </Link>
         </nav>
       </Toolbar>
