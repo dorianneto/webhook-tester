@@ -97,14 +97,14 @@ export default function VerticalTabs(props) {
           </ListItem>
           <Collapse in={open} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
-              {headers.map(header => (
-                <>
+              {headers.map((header, i) => (
+                <React.Fragment key={i}>
                   <ListItem className={classes.nested}>
                     <Chip label={header[0]} />
                     <Typography component="div">{header[1]}</Typography>
                   </ListItem>
                   <Divider />
-                </>
+                </React.Fragment>
               ))}
             </List>
           </Collapse>

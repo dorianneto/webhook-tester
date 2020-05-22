@@ -70,8 +70,8 @@ export default function Listen() {
     <Layout showLoadPage={showLoadPage}>
       <main className={classes.main}>
         <Settings token={token} />
-        {requests.map(request => (
-          <ListenCard data={request} />
+        {requests.map((request, i) => (
+          <ListenCard key={i} data={request} />
         ))}
       </main>
       <ErrorAlert
