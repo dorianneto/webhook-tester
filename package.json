@@ -1,7 +1,7 @@
 {
   "homepage": "http://webhooktester.dorianneto.com.br",
   "name": "webhook-tester",
-  "version": "1.0.0",
+  "version": "1.0.0-beta",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.9.9",

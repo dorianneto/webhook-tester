@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     minHeight: '100vh',
+    backgroundColor: theme.palette.background.paper,
   },
 }));
 
@@ -22,10 +23,10 @@ export default function Layout(props) {
   return (
     <div className={classes.root}>
       <CssBaseline />
+      <Header />
       <Fade in={showLoadPage}>
         <LinearProgress />
       </Fade>
-      <Header />
       {props.children}
       <Footer />
     </div>
