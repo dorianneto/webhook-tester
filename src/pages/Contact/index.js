@@ -39,7 +39,7 @@ export default function Contact() {
               Do you want to talk about an error, a new feature, or even talk about a business opportunity?
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
-              Feel free to reach me out through these links:
+              Feel free to get in touch through these links:
             </Typography>
             <div className={classes.socialButtons}>
               <IconButton href="https://github.com/dorianneto" target="_blank">

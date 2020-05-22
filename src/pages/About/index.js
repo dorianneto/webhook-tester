@@ -27,7 +27,7 @@ export default function About() {
               About
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
-              <strong>Webhook Tester</strong> is an application with a clean and focused on what matters interface whose main goal is to make Webhooks debug easier, it doesn't matter the provider.
+              <strong>Webhook Tester</strong> is an application with a clean interface and focused on what matters, whose main goal is to make debuging Webhooks easier, it doesn't matter the service you are using.
             </Typography>
           </Container>
         </div>

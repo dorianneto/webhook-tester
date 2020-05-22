@@ -72,7 +72,7 @@ export default function Home() {
               Webhook Tester
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
-              Generate a unique URL and be able to debug as many as HTTP requests you need from any provider in real-time, through a clean and focused in what matters interface.
+              Generate a unique URL and be able to debug as many as HTTP requests you need from any service in real-time, through a clear interface and focused on what matters.
             </Typography>
             <div className={classes.heroButtons}>
               <Button onClick={handleGenerateEndpoint} variant="contained" color="primary" size="large">
